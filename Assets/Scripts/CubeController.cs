@@ -6,7 +6,7 @@ using TMPro;
 public class CubeController : MonoBehaviour
 {
     public TMP_Text scoreText;
-    //DECLARE VARIABLES HERE
+    private int currentNum;
     
 
     // Start is called before the first frame update
