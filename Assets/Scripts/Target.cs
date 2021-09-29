@@ -11,5 +11,9 @@ public class Target : MonoBehaviour
     }
 
     //Create OnTriggerEnter function here
-    
+    void OnTriggerEnter()
+    {
+        Destroy(gameObject);
+
+    }
 }

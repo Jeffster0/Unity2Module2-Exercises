@@ -41,9 +41,23 @@ public class PlayerController : MonoBehaviour
     }
 
     //Create OnCollisionExit function below
+    void OnCollisionExit(Collision other)
+    {
+        if(other.gameObject.CompareTag("Floor"))
+        {
+            RestartLevel();
+        }
+    }
 
 
     //Create OnCollisionStay function below 
+    void OnCollisionStay(Collision other)
+    {
+        if(other.gameObject.CompareTag("Floor"))
+        {
+            DisplayTime(time);
+        }
+    }
     
 
     //END OF CODE
