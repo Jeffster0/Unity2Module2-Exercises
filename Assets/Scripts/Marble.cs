@@ -17,7 +17,7 @@ public class Marble : MonoBehaviour
             float move_speed = speed * Time.deltaTime;
             
             //WRITE CODE HERE 
-            Mathf.MoveTowards(curr_pos, target_pos, move_speed);
+            //Mathf.MoveTowards(curr_pos, target_pos, move_speed);
             //END OF CODE
 
         }
